@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>MAQUETACION MASTER JS</title>
+        <!-- HOJA DE ESTILOS-->
+        <link rel="stylesheet" href="./assets/css/styles.css" type="text/css"/>
+
+        <script type="text/javascript">
+        window.addEventListener("load", function(){
+            var template = document.getElementById("article-template");
+            var clonar  = template.cloneNode(true);
+            var articles = document.getElementById("articles");
+            for(var i =0; i<=5; i++){
+                
+            }
+
+        });
+
+        </script>   
+
+
+    </head>
+    <body>
+        <header id="header">
+           <!-- LOGO-->
+           <div class="center">
+               <div id="logo">
+                   <img src="./assets/images/balon.jpg" class="app-log" alt="Logotipo"/>
+                    <span id="brand">
+                        <strong>Curso</strong>React
+                    </span>
+                </div>
+            <!--MENU-->
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href="#">Inicio</a>
+
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                            
+                    </li>
+                    <li>
+                        <a href="#">Formulario</a>
+                            
+                    </li>
+                    <li>
+                        <a href="#">Pagina 1</a>
+                            
+                    </li>
+                    <li>
+                            <a href="#">Pagina 2</a>
+                                
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- Limpiar flotados
+            -->
+            <div class="clearfix" >    </div>
+               
+           </div>
+        </header>
+
+        <div id="slider" class="slider-big">
+            <h1> Welcome to my page </h1>
+            <a href="#" class="btn-white"> Go blog</a> 
+        </div>
+
+        <div class="center">
+            <section id="content">
+                <h2>Last news</h2>
+
+              <div id="articles">
+
+                <article class="article-item" id="article-template" >
+                    <div class="image-wrap" >
+                        <img src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjl-In0g5DlAhVaHTQIHWArCHQQjRx6BAgBEAQ&url=%2Furl%3Fsa%3Di%26source%3Dimages%26cd%3D%26ved%3D%26url%3Dhttps%253A%252F%252Fwww.eltiempo.com%252Fcolombia%252Fotras-ciudades%252Fpaisajes-rurales-mas-lindos-de-colombia-226970%26psig%3DAOvVaw3ABKR2HkUzWNlchVYwLAw-%26ust%3D1570739806089962&psig=AOvVaw3ABKR2HkUzWNlchVYwLAw-&ust=1570739806089962"
+                         alt="Paisaje" />
+
+                    </div>
+                    <h2>Test article</h2>
+                    <span class="date">
+                        five minutes ago
+                    </span>
+                    <a href="#" >Read more</a>
+                </article>
+
+            </div>
+            </section>
+
+           
+
+            <aside id="sidebar">
+                <div id="nav-blog" class="sidebar-item">
+                    <h3>You can do it</h3>
+                    <a href="#" > Add article </a>
+
+
+                </div>
+
+                <div id="search" class="sidebar-item">
+                        <h3>Search</h3>
+                        <p>Find your news</p>
+                        <form>
+                            <input type="text" name="search" />
+                            <input type ="submit" name="submit"  class="btn" value="Search">
+
+                        </form>
+                        
+                </div>
+
+
+            </aside>
+         <div class="clearfix"> </div>
+        </div>
+
+        <footer id="footer">
+                <div class="center">
+                       &copy; CSA 2020 
+                </div>
+        </footer>
+
+    </body>
+</html>
