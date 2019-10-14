@@ -13,8 +13,9 @@
             var articles = document.getElementById("articles");
             for(var i =1; i<=5; i++){
                 var clonado  = template.cloneNode(true);
-                var h2  = cloando.getElementsByTagName("h2")[0];
+                var h2  = clonado.getElementsByTagName("h2")[0];
                 h2.innerHTML= h2.textContent+' '+i;
+                clonado.removeAttribute("id");
                 articles.appendChild(clonado);
             }
 
@@ -81,7 +82,7 @@
 
                 <article class="article-item" id="article-template" >
                     <div class="image-wrap" >
-                        <img src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjl-In0g5DlAhVaHTQIHWArCHQQjRx6BAgBEAQ&url=%2Furl%3Fsa%3Di%26source%3Dimages%26cd%3D%26ved%3D%26url%3Dhttps%253A%252F%252Fwww.eltiempo.com%252Fcolombia%252Fotras-ciudades%252Fpaisajes-rurales-mas-lindos-de-colombia-226970%26psig%3DAOvVaw3ABKR2HkUzWNlchVYwLAw-%26ust%3D1570739806089962&psig=AOvVaw3ABKR2HkUzWNlchVYwLAw-&ust=1570739806089962"
+                        <img src="https://www.dzoom.org.es/wp-content/uploads/2017/07/seebensee-2384369-810x540.jpg"
                          alt="Paisaje" />
 
                     </div>

@@ -261,3 +261,14 @@ padding: 0px;
 
 
 }
+
+.article-item{
+    width: 100%;
+    border-bottom: 1px solid #eeee;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: left;
+
+}
+
+article-item .image-wrap
